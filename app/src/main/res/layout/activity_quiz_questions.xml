@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    tools:context=".Quiz_Questions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_que"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="#594d4c"
+            tools:text="What Is The Name Of This Animal ?" />
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/quiz_image"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/panda" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="168dp"
+                android:layout_height="16dp"
+                android:layout_weight="18"
+                android:indeterminate="false"
+                android:max="5"
+                android:minHeight="50dp"
+                android:progress="4"
+             />
+            <TextView
+                android:id="@+id/tvProg"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_weight="2"
+               tools:text="2/5"
+                android:textColor="#594d4c"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/op1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/opborder"
+            android:padding="15dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            tools:text="Panda" />
+        <TextView
+            android:id="@+id/op2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/opborder"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            tools:text="Panda" />
+        <TextView
+            android:id="@+id/op3"
+            android:layout_width="match_parent"
+            android:background="@drawable/opborder"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            tools:text="Panda" />
+        <TextView
+            android:id="@+id/op4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/opborder"
+            android:padding="15dp"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            tools:text="Panda" />
+        <Button
+            android:id="@+id/button"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/mybutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+    </LinearLayout>
+
+
+</ScrollView>
